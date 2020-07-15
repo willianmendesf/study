@@ -12,6 +12,7 @@ Obrigado Pela Visita.
 
 
 - Front-End
+-- Gulp
 - Back-End
 - Full-Stack
 - Mobile
