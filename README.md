@@ -12,23 +12,23 @@ Obrigado Pela Visita.
 
 
 1. Front-End
-[x] HTML5
-[x] Sass
-[x] Pug
-[x] Gulp
-[x] Vanilla JS
-[] Es6 Avançado
+-[x] HTML5
+-[x] Sass
+-[x] Pug
+-[x] Gulp
+-[x] Vanilla JS
+-[] Es6 Avançado
 
 2. Back-End
-[] Typescript
-[-] NodeJS
-[] MongoDB
+-[] Typescript
+-[-] NodeJS
+-[] MongoDB
 
 3. Full-Stack
 
 4. Mobile
-[x] React Native
-[] Native Script
-[] Flutter
-[] Ionic
-[] Cordova
+-[x] React Native
+-[] Native Script
+-[] Flutter
+-[] Ionic
+-[] Cordova
