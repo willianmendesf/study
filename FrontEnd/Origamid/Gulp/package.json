@@ -4,23 +4,25 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "browser-sync": "^2.26.7",
     "concat": "^1.0.3",
     "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
-    "uglify-es": "^3.3.9",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
     "gulp-uglify": "^3.0.2",
-    "gulp-babel": "^8.0.0"
+    "uglify-es": "^3.3.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jquery": "^3.5.1"
+  },
   "scripts": {
     "dev": "gulp"
   },

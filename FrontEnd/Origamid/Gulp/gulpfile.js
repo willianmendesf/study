@@ -12,6 +12,9 @@ const browserSync = require("browser-sync").create();
 const public = "./app/public";
 const src = "./app/src";
 
+
+
+
 // PUG
 function compilapug(){
   return gulp
@@ -20,6 +23,9 @@ function compilapug(){
     .pipe(gulp.dest(public));
 }
 gulp.task("html", compilapug);
+
+
+
 
 // SASS
 function compilasass() {
@@ -41,10 +47,13 @@ function compilasass() {
 }
 gulp.task("sass", compilasass);
 
+
+
+
 // Javascript
 function compilajs(){
   return gulp
-  .src(`${src}/js/**/*.js`)
+  .src(`${src}/js/*.js`)
   .pipe(concat('main.js'))
   .pipe(babel({
     presets: ['@babel/env']
@@ -54,6 +63,25 @@ function compilajs(){
   .pipe(browserSync.stream());
 }
 gulp.task("js", compilajs)
+
+
+
+
+// Plugins
+function pluginsJS(){
+  return gulp
+  .src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'app/src/js/plugins/slide.js',
+  ])
+  .pipe(concat('plugins.js'))
+  .pipe(gulp.dest(`${public}/assets/js/`))
+  .pipe(browserSync.stream());
+}
+gulp.task("plugins", pluginsJS);
+
+
+
 
 // BrowserSync
 function browser() {
@@ -65,6 +93,9 @@ function browser() {
 }
 gulp.task("browserSync", browser);
 
+
+
+
 // Watch
 function watchview() {
   gulp.watch(`${src}/sass/**/*.scss`, compilasass)
@@ -72,10 +103,14 @@ function watchview() {
   gulp.watch([
     `${src}/pug/**/*.pug`,
     `${src}/js/*.js`, 
-    `${src}/sass/**/*.scss`
+    `${src}/sass/**/*.scss`,
+    `${src}/js/plugins/*.js`,
   ]).on("change", browserSync.reload)
 }
 gulp.task("watch", watchview);
 
+
+
+
 // Default
-gulp.task("default", gulp.parallel("watch", "browserSync"))
+gulp.task("default", gulp.parallel("sass", "js", "plugins", "watch", "browserSync"))
