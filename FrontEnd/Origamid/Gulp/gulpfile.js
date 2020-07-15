@@ -1,9 +1,9 @@
-//sudo npm i gulp gulp-sass gulp-pug uglify-es cssnano gulp-autoprefixer gulp-concat browser-sync
+//sudo npm i gulp gulp-sass gulp-pug gulp-uglify gulp-autoprefixer gulp-concat browser-sync gulp-babel @babel/core @babel/preset-env
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
-const minify = require("uglify-es");
-const cssnano = require("cssnano");
+const uglify = require("gulp-uglify");
+const babel = require("gulp-babel");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
@@ -36,7 +36,8 @@ function compilasass() {
         cascade: false,
       })
     )
-    .pipe(gulp.dest(`${public}/assets/css`));
+    .pipe(gulp.dest(`${public}/assets/css`))
+    .pipe(browserSync.stream());
 }
 gulp.task("sass", compilasass);
 
@@ -45,7 +46,12 @@ function compilajs(){
   return gulp
   .src(`${src}/js/**/*.js`)
   .pipe(concat('main.js'))
+  .pipe(babel({
+    presets: ['@babel/env']
+  }))
+  .pipe(uglify())
   .pipe(gulp.dest(`${public}/assets/js/`))
+  .pipe(browserSync.stream());
 }
 gulp.task("js", compilajs)
 
@@ -63,7 +69,11 @@ gulp.task("browserSync", browser);
 function watchview() {
   gulp.watch(`${src}/sass/**/*.scss`, compilasass)
   gulp.watch(`${src}/pug/**/*.pug`, compilapug)
-  gulp.watch([`${src}/pug/**/*.pug`,`${src}/js/*.js`, `${src}/sass/**/*.scss`]).on("change", browserSync.reload)
+  gulp.watch([
+    `${src}/pug/**/*.pug`,
+    `${src}/js/*.js`, 
+    `${src}/sass/**/*.scss`
+  ]).on("change", browserSync.reload)
 }
 gulp.task("watch", watchview);
 

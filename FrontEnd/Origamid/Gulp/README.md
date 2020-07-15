@@ -19,7 +19,7 @@ $ npm i
 ```
 ou 
 ```
-$ npm i gulp gulp-sass gulp-pug uglify-es cssnano gulp-autoprefixer gulp-concat browser-sync
+$ npm i gulp gulp-sass gulp-pug gulp-uglify gulp-autoprefixer gulp-concat browser-sync gulp-babel @babel/core @babel/preset-env
 ```
 
 ### Comandos
