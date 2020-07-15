@@ -9,3 +9,9 @@ Espero que este repositório lhe incentive e lhe inspire a estudar assim como eu
 Obrigado Pela Visita. 
 
 :) 
+
+
+- Front-Ended
+- Back-Ended
+- Full-Stack
+- Mobile
