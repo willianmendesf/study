@@ -11,7 +11,7 @@ Obrigado Pela Visita.
 :) 
 
 
-- Front-Ended
-- Back-Ended
+- Front-End
+- Back-End
 - Full-Stack
 - Mobile
