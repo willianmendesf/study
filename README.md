@@ -11,11 +11,11 @@ Obrigado Pela Visita.
 :) 
 
 
-1. Front-End
+* Front-End
 - Gulp
 
-2. Back-End
+* Back-End
 
-3. Full-Stack
+* Full-Stack
 
-4. Mobile
+* Mobile
