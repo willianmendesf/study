@@ -1,24 +1,28 @@
+//sudo npm i gulp gulp-sass gulp-pug uglify-es cssnano gulp-autoprefixer gulp-concat browser-sync
 const gulp = require("gulp");
-// const watch = require("gulp-watch");
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
 const minify = require("uglify-es");
 const cssnano = require("cssnano");
+const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
-const GulpClient = require("gulp");
 const browserSync = require("browser-sync").create();
 
 // PATHS
 const public = "./app/public";
 const src = "./app/src";
 
-// PUG ENGINE TEMPLATE
-gulp.task("html", function () {
-  return gulp.src(`${src}/pug/**/*.pug`).pipe(pug()).pipe(gulp.dest(public));
-});
+// PUG
+function compilapug(){
+  return gulp
+    .src(`${src}/pug/**/*.pug`)
+    .pipe(pug())
+    .pipe(gulp.dest(public));
+}
+gulp.task("html", compilapug);
 
 // SASS
-gulp.task("compileSass", function () {
+function compilasass() {
   return gulp
     .src(`${src}/sass/**/*.scss`)
     .pipe(
@@ -32,17 +36,36 @@ gulp.task("compileSass", function () {
         cascade: false,
       })
     )
-    .pipe(gulp.dest(`${public}/css`));
-});
+    .pipe(gulp.dest(`${public}/assets/css`));
+}
+gulp.task("sass", compilasass);
 
-gulp.task("browserSync", function () {
+// Javascript
+function compilajs(){
+  return gulp
+  .src(`${src}/js/**/*.js`)
+  .pipe(concat('main.js'))
+  .pipe(gulp.dest(`${public}/assets/js/`))
+}
+gulp.task("js", compilajs)
+
+// BrowserSync
+function browser() {
   browserSync.init({
     server: {
       baseDir: "./app/public",
     },
   });
-});
+}
+gulp.task("browserSync", browser);
 
-gulp.task("default", function () {
-  gulp.watch(`${src}/sass/*.scss`, gulp.series("html", "compileSass"));
-});
+// Watch
+function watchview() {
+  gulp.watch(`${src}/sass/**/*.scss`, compilasass)
+  gulp.watch(`${src}/pug/**/*.pug`, compilapug)
+  gulp.watch([`${src}/pug/**/*.pug`,`${src}/js/*.js`, `${src}/sass/**/*.scss`]).on("change", browserSync.reload)
+}
+gulp.task("watch", watchview);
+
+// Default
+gulp.task("default", gulp.parallel("watch", "browserSync"))
