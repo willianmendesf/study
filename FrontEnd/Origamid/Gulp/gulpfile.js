@@ -1,36 +1,39 @@
-//sudo npm i gulp gulp-sass gulp-pug gulp-uglify gulp-autoprefixer gulp-concat browser-sync gulp-babel @babel/core @babel/preset-env
-const gulp = require("gulp");
-const sass = require("gulp-sass");
-const pug = require("gulp-pug");
-const uglify = require("gulp-uglify");
-const babel = require("gulp-babel");
-const concat = require("gulp-concat");
-const autoprefixer = require("gulp-autoprefixer");
-const browserSync = require("browser-sync").create();
+//----------------------------- Configuration -------------------------------//
 
-// PATHS
-const public = "./app/public";
-const src = "./app/src";
+const src           = "./app/src";
+const public        = "./app/public";
+const _ES6          = `${src}/js/**/*.js`;
+const _pug          = `${src}/pug/**/*.pug`;
+const _js           = `${public}/assets/js/`;
+const _css          = `${public}/assets/css`;
+const _sass         = `${src}/sass/**/*.scss`;
+const _plugins      = `${src}/js/plugins/**/*.js`;
 
+//--------------------------------- Modules ---------------------------------//
 
+const del           = require('del');
+const gulp          = require("gulp");
+const sass          = require("gulp-sass");
+const pug           = require("gulp-pug");
+const uglify        = require("gulp-uglify");
+const babel         = require("gulp-babel");
+const concat        = require("gulp-concat");
+const autoprefixer  = require("gulp-autoprefixer");
+const browserSync   = require("browser-sync").create();
 
+//------------------------------ Production --------------------------------//
 
-// PUG
-function compilapug(){
+function compilapug () {
   return gulp
-    .src(`${src}/pug/**/*.pug`)
+    .src(_pug)
     .pipe(pug())
-    .pipe(gulp.dest(public));
+    .pipe(gulp.dest(public))
+    .pipe(browserSync.stream());
 }
-gulp.task("html", compilapug);
 
-
-
-
-// SASS
-function compilasass() {
+function compilasass () {
   return gulp
-    .src(`${src}/sass/**/*.scss`)
+    .src(_sass)
     .pipe(
       sass({
         outputStyle: "compressed",
@@ -38,79 +41,70 @@ function compilasass() {
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
         cascade: false,
       })
     )
-    .pipe(gulp.dest(`${public}/assets/css`))
+    .pipe(gulp.dest(_css))
     .pipe(browserSync.stream());
 }
-gulp.task("sass", compilasass);
 
-
-
-
-// Javascript
-function compilajs(){
+function compilajs () {
   return gulp
-  .src(`${src}/js/*.js`)
+  .src(_ES6)
   .pipe(concat('main.js'))
   .pipe(babel({
     presets: ['@babel/env']
   }))
   .pipe(uglify())
-  .pipe(gulp.dest(`${public}/assets/js/`))
+  .pipe(gulp.dest(_js))
   .pipe(browserSync.stream());
 }
-gulp.task("js", compilajs)
 
-
-
-
-// Plugins
-function pluginsJS(){
+function pluginsJS () { 
   return gulp
   .src([
-    'node_modules/jquery/dist/jquery.min.js',
-    'app/src/js/plugins/slide.js',
+    './app/src/js/plugins/slide.js'
   ])
   .pipe(concat('plugins.js'))
-  .pipe(gulp.dest(`${public}/assets/js/`))
+  .pipe(gulp.dest(_js))
   .pipe(browserSync.stream());
 }
-gulp.task("plugins", pluginsJS);
 
-
-
-
-// BrowserSync
-function browser() {
+function browser () {
   browserSync.init({
     server: {
-      baseDir: "./app/public",
+      baseDir: public,
     },
   });
 }
-gulp.task("browserSync", browser);
 
-
-
-
-// Watch
-function watchview() {
-  gulp.watch(`${src}/sass/**/*.scss`, compilasass)
-  gulp.watch(`${src}/pug/**/*.pug`, compilapug)
-  gulp.watch([
-    `${src}/pug/**/*.pug`,
-    `${src}/js/*.js`, 
-    `${src}/sass/**/*.scss`,
-    `${src}/js/plugins/*.js`,
-  ]).on("change", browserSync.reload)
+function clean () {
+  return del([public], {force:true});
 }
-gulp.task("watch", watchview);
 
+function watchview () {
+  gulp.watch(_sass, gulp.series(clean, compilasass))
+  gulp.watch(_pug, gulp.series(clean, compilapug))
+  gulp.watch([_pug, _ES6, _sass, _plugins]).on("change", browserSync.reload)
+}
 
+//--------------------------------- Tasks -----------------------------------//
 
+exports.js        = compilajs;
+exports.html      = compilapug;
+exports.sass      = compilasass;
+exports.clean     = clean;
+exports.watch     = watchview;
+exports.plugins   = pluginsJS;
+exports.browser   =  browser;
 
-// Default
-gulp.task("default", gulp.parallel("sass", "js", "plugins", "watch", "browserSync"))
+const run = [
+  this.clean, 
+  this.sass,
+  this.html,
+  this.js,
+  this.plugins
+]
+
+exports.default = gulp.series(run, gulp.parallel(this.watch, this.browser))
+exports.build = gulp.series(run)
