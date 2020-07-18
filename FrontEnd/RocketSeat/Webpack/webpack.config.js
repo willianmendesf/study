@@ -1,5 +1,5 @@
 module.exports = {
-  entry : './app/src/js/main.js',
+  entry : ['@babel/polyfill', './app/src/js/main.js'],
   output : {
     path: __dirname + '/app/public/',
     filename : 'bundle.js',

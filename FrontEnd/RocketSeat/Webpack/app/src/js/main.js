@@ -1,15 +1,18 @@
 import * as funcoes from "./modules/function";
+import { minhaPromisse } from "./modules/promisse"
+
+// minhaPromisse()
+//   .then(response => {
+//     console.log(response);
+//   })
+//   .catch(err => {
+//   })
 
 
-// import calc, { sub } from "./modules/function";
-// import { soma as calc, sub } from "./modules/function";
-// import { calc, sub } from "./modules/function";
-// import calc from "./modules/soma";
+async function executaPromisse() {
+  console.log(await minhaPromisse())
+  console.log(await minhaPromisse())
+  console.log(await minhaPromisse())
+}
 
-// import { Usuario } from "./modules/Usuarios";
-
-// const { nome, idade, endereco : { cidade } } = new Usuario();
-// const usuario = new Usuario;
-// console.log(usuario.addNome("Blade"));
-
-console.log(funcoes.div(100, 5))
+executaPromisse();
