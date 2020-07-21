@@ -5,6 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon ./server.js"
+	},
+	"engines": {
+    "node": "10.21.0"
   },
   "keywords": [],
   "author": "",
