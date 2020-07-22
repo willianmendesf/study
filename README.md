@@ -1,5 +1,6 @@
 # My OminiStudy
 
+<h3>
 Neste repositório você vera e descobrirá a fraqueza e a força de um mestre,
 uma lenda, um Mito, e no fim descobrirá que ele é um Deus.
 
@@ -19,5 +20,5 @@ Porque este Deus é lendário. => 'Lendárius'...
 Blade a Lenda.
 
 Não tema prestar tributos a ele, seu mero mortal. Tenha reverência.
-
+</h3>
 :)
