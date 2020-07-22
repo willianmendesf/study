@@ -29,7 +29,7 @@ Blade a Lenda.
 Não tema prestar tributos a ele, seu mero mortal. Tenha reverência.
 </h4>
 
-## Há 3 Programadores que me incentivam buscar o incancançável.
+## Há 3 Programadores que me incentivam buscar o inalcançável.
 * Cris Feit ( Uma das melhroes pessoas, e profissional que tive o prazer de trabalhar junto. Não apenas isso, mas alguem que me incentivou e mostrou uma forma melhor, mais rácional, lúcida e embasada de programar. )
 
 * Rodrigo ( Uma lenda, pouca pacicência para ajudar, mas excelente programador e construtor de experiências. )
