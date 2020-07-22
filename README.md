@@ -1,4 +1,4 @@
-# My Study
+# My OminiStudy
 
 Olá, não se prenda muito no que você ve aqui, este é apenas um repositório de estudos, recentemente acabei trocando de computador muitas vezes, e por vezes perdi meu progresso de estudos e cursos, com isso resolvi criar este repositório para salvar meu progresso e focos de estudo.
 
