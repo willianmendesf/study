@@ -1,5 +1,6 @@
 <h1 align="center">
- My OminiStudy 
+ Odin, A Lenda
+ <br><br>
  
 ![alt size="80"](https://cdn.mensagenscomamor.com/content/images/m000480941.jpg?v=1&w=350&h=200)
  
