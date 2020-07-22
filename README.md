@@ -1,17 +1,23 @@
 # My OminiStudy
 
-Olá, não se prenda muito no que você ve aqui, este é apenas um repositório de estudos, recentemente acabei trocando de computador muitas vezes, e por vezes perdi meu progresso de estudos e cursos, com isso resolvi criar este repositório para salvar meu progresso e focos de estudo.
+Neste repositório você vera e descobrirá a fraqueza e a força de um mestre,
+uma lenda, um Mito, e no fim descobrirá que ele é um Deus.
 
-Como estou visando me tornar um Software Engineering, você certamente verá que aqui há muitos conteúdos diversos, alguns estou estudando de fato, outros são apeas testes e tateamento, seja de uma linguagem, framework ou outro que seja, sobre algo relacionado a meus estudos ou focos futuros.
+É nesse repositório que o Deus Odin se manifesta, construindo com poder e sabedoria
+toda a sua base das suas criaturas (aplicações), e desenhando toda a beleza e ação
+das mesmas e a relação das suas criaturas com outras criaturas e Extra-terrestres (humanos).
 
-Espero que este repositório lhe incentive e lhe inspire a estudar assim como eu o tenho feito.
+É aqui que você descobre como Odin se tornou Odin, seu passe presente e futuro. 
+É aqui que um dever Deus se manifesta. 
+Outros o chamam de Blade a Lenda.
 
-Obrigado Pela Visita. 
+Porque este Deus é lendário. => 'Lendárius'...
 
-:) 
+É aqui que se separa os meninos dos homens, e os homens dos Deuses.
+É aqui que um dever errante se torna Odin o Grande.
 
+Blade a Lenda.
 
-* Front-End
-* Back-End
-* Full-Stack
-* Mobile
+Não tema prestar tributos a ele, seu mero mortal. Tenha reverência.
+
+:)
