@@ -34,9 +34,9 @@ Não tema prestar tributos a ele, seu mero mortal. Tenha reverência.
 * Rodrigo ( Uma lenda, pouca pacicência para ajudar, mas excelente programador e construtor de experiências. )
 * Hyber ( Vulgo Patrick, a lenda que conheci em pessoa que norteia e norteou meus estudos, o cara mais fera que tive o prazer de conversar e não apenas isso, um programador de cair o queixo, construindo com excelência tanto o Frontend como o Backend, alguém que é um parâmetro de dever para mim. )
 
-- 1. https://github.com/crisfeit
-_ 2. https://github.com/rodrigoreeis
-_ 3. https://github.com/hybear
+ 1. https://github.com/crisfeit
+ 2. https://github.com/rodrigoreeis
+ 3. https://github.com/hybear
 
 Fica aí meu agradecimentos a essas lendas.
 
