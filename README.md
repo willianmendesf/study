@@ -1,4 +1,9 @@
-<h1 align="center"> My OminiStudy </h1>
+<h1 align="center">
+ My OminiStudy 
+ 
+![alt size="80"](https://cdn.mensagenscomamor.com/content/images/m000480941.jpg?v=1&w=350&h=200)
+ 
+ </h1>
 
 <h3>
 Neste repositório você vera e descobrirá a fraqueza e a força de um mestre,
