@@ -4,9 +4,12 @@
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
+		"commit": "git add . && git-cz",
+    "build": "node",
 		"dev": "nodemon"
-	},
+  },
   "dependencies": {
+    "commit": "^0.0.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "test-executor": "^1.2.4",
