@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header'
 
 /**
@@ -9,20 +9,26 @@ import Header from './components/Header'
  */
 
 export default function App() {
+	const	[projects, setProjects] = useState(['developer of app','Frotend web'])
+
+	// useState retorna array com duas posições,
+	// 1. Variável com seu valor inicial
+	// 2. Funcção para atualizarmos esse valor.
+
+	function handleAddProject(){
+		setProjects([...projects, `Novo Projeto ${Date.now()}`])
+		console.log(projects)
+	}
+
 	return (
 		<>
-			<Header title="Header">
-				<ul>
-					<li>Home</li>
-					<li>Projetos</li>
-					<li>Contato</li>
-				</ul>
-			</Header>
-			<Header title="Projects">
-				<ul>
-					<li>Login</li>
-				</ul>
-			</Header>
+		{console.log('run')}
+			<Header title="Projects"/>
+
+			<ul>
+				<button type="button" onClick={handleAddProject} >Adicionar Projeto</button>
+				{	projects.map(project => <li key={project}> { project } </li>) }
+			</ul>
 		</>
 	)
 }
