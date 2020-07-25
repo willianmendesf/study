@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import Header from './components/Header'
 
-/**
+/*
  * CONCEITOS CENTRAIS DO REACT;
  * Component
  * Propriedade
  * Estado & Imutabilidade
  */
+
+import './components/geral.css'
+import backgroundImage from './assets/backgroundImage.jpg'
 
 export default function App() {
 	const	[projects, setProjects] = useState(['developer of app','Frotend web'])
@@ -24,6 +27,8 @@ export default function App() {
 		<>
 		{console.log('run')}
 			<Header title="Projects"/>
+
+			<img src={backgroundImage} width="100%"/>
 
 			<ul>
 				<button type="button" onClick={handleAddProject} >Adicionar Projeto</button>
