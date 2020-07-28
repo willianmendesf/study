@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header'
+import api from '../services/api'
 
 /*
  * CONCEITOS CENTRAIS DO REACT;
@@ -19,8 +20,11 @@ export default function App() {
 	// 2. Funcção para atualizarmos esse valor.
 
 	function handleAddProject(){
-		setProjects([...projects, `Novo Projeto ${Date.now()}`])
-		console.log(projects)
+		// setProjects([...projects, `Novo Projeto ${Date.now()}`])
+		api.post('projects', {
+			title: `FrontEnd Developer ${Date.now()}`,
+			owner: "William Mendes"
+		})
 	}
 
 	return (
