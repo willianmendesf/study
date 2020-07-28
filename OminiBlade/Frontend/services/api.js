@@ -1,7 +1,12 @@
-import axios from 'axios';
+import axios from 'axios'
 
-const api = () => axios.create({
-	baseURL:'http://localhost:3333'
-})
+const api = (params, content) => axios
+		.get(`http://localhost:3333/${params}`)
+		.then(
+			response => {
+				console.log(response)
+				setProjects(response.data)
+			})
+		.catch(error =>  console.log(error))
 
 export default api;

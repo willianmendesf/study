@@ -1,42 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header'
-import api from '../services/api'
-
-/*
- * CONCEITOS CENTRAIS DO REACT;
- * Component
- * Propriedade
- * Estado & Imutabilidade
- */
+import axios from 'axios'
 
 import './components/geral.css'
-import backgroundImage from './assets/backgroundImage.jpg'
 
 export default function App() {
-	const	[projects, setProjects] = useState(['developer of app','Frotend web'])
+	const	[projects, setProjects] = useState([])
 
-	// useState retorna array com duas posições,
-	// 1. Variável com seu valor inicial
-	// 2. Funcção para atualizarmos esse valor.
+	useEffect(() => {
+		axios.get('http://localhost:3333/projects').then(response => {
+			setProjects(response.data)
+		}, [])
+	});
 
 	function handleAddProject(){
-		// setProjects([...projects, `Novo Projeto ${Date.now()}`])
-		api.post('projects', {
-			title: `FrontEnd Developer ${Date.now()}`,
-			owner: "William Mendes"
-		})
+		setProjects([...projects, `Novo Projeto ${Date.now()}`])
 	}
 
 	return (
 		<>
-		{console.log('run')}
 			<Header title="Projects"/>
 
-			<img src={backgroundImage} width="100%"/>
+			<button type="button" onClick={handleAddProject} >Adicionar Projeto</button>
 
 			<ul>
-				<button type="button" onClick={handleAddProject} >Adicionar Projeto</button>
-				{	projects.map(project => <li key={project}> { project } </li>) }
+				{	projects.map(project => <li key={project.id}> { project.title } </li>) }
 			</ul>
 		</>
 	)
