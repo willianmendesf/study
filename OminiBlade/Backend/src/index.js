@@ -3,8 +3,10 @@ const cors = require("cors");
 const app = express();
 const { uuid } = require('uuidv4')
 
+app.use(cors({
+  origin: 'http://localhost:8080'
+}));
 app.use(express.json());
-app.use(cors());
 
 const projects = [];
 

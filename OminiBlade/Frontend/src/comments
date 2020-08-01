@@ -1,0 +1,12 @@
+/*
+ * CONCEITOS CENTRAIS DO REACT;
+ * Component
+ * Propriedade
+ * Estado & Imutabilidade
+ */
+
+// useState retorna array com duas posições,
+// 1. Variável com seu valor inicial
+// 2. Funcção para atualizarmos esse valor.
+
+// setProjects([...projects, `Novo Projeto ${Date.now()}`])
