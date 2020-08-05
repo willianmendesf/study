@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, StyleSheet, StatusBar } from 'react-native'
+import { View, FlatList, Text, StyleSheet, StatusBar, Button } from 'react-native'
  import api from './services/api'
 
 // Não possuem valor semântico (significado) (São abstratos).
@@ -14,16 +14,22 @@ export default function App () {
 
 	useEffect(() => {
 		api.get('/projects').then(response => {
-			console.log(response.data)
 			setProjects(response.data)
+			console.log(response.data)
 		})
-	})
+	}, [])
+
+	console.table(projects)
 
 	return (
 		<>
-		 	<StatusBar barStyle="ligth-content" backgroundColor="purple"/>
+			<StatusBar barStyle="ligth-content" backgroundColor="purple"/>
 			<View style={styles.container}>
-				<Text style={styles.text}> GoStack </Text>
+				<Text style={styles.welcome}> Welcome! </Text>
+				<Text style={styles.project}>Blade</Text>
+				<Text style={styles.list}>
+					{ projects.map(project => <Text key={project.id}> { project.title } </Text>) }
+				</Text>
 			</View>
 		</>
 		);
@@ -35,11 +41,24 @@ const styles = StyleSheet.create({
 		backgroundColor: 'purple',
 		justifyContent: 'center',
 		alignItems: 'center',
+		color:'white',
 	},
-	text: {
+	welcome: {
+		fontFamily: 'sans-serif',
+		color: '#00000099',
+		textTransform: 'lowercase',
+		fontSize: 22,
+	},
+	project: {
+		fontFamily: 'sans-serif',
 		color: 'white',
-		fontSize: 30,
 		fontWeight:'bold',
-		padding:40,
+		fontSize: 40,
+	},
+	list:{
+		marginTop:20,
+		width: 250,
+		color: '#00000099',
+		textAlign:'center',
 	}
 })
