@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, FlatList, Text, StyleSheet, StatusBar, Button } from 'react-native'
+import { SafeAreaView, FlatList, Text, StyleSheet, StatusBar, TouchableOpacity } from 'react-native'
  import api from './services/api'
 
 // Não possuem valor semântico (significado) (São abstratos).
@@ -15,22 +15,40 @@ export default function App () {
 	useEffect(() => {
 		api.get('/projects').then(response => {
 			setProjects(response.data)
-			console.log(response.data)
+			console.table(projects)
 		})
 	}, [])
 
-	console.table(projects)
+	async function handleAddProject () {
+		const reponse = await api.post('/projects', {
+			title: `MongoDB ${Date.now()}`,
+			owner: 'William Mendes'
+		})
+		const project = reponse.data
+		setProjects([...projects, project])
+	}
 
 	return (
 		<>
 			<StatusBar barStyle="ligth-content" backgroundColor="purple"/>
-			<View style={styles.container}>
-				<Text style={styles.welcome}> Welcome! </Text>
-				<Text style={styles.project}>Blade</Text>
-				<Text style={styles.list}>
-					{ projects.map(project => <Text key={project.id}> { project.title } </Text>) }
-				</Text>
-			</View>
+
+			<SafeAreaView style={styles.container}>
+				<FlatList
+					data={projects}
+					keyExtractor={project => project.id}
+					renderItem={({ item: project }) => (
+						<Text style={styles.project}> {project.title} </Text>
+					)}
+				/>
+
+				<TouchableOpacity
+					activeOpacity={1}
+					style={styles.button}
+					onPress={handleAddProject}
+				>
+					<Text style={styles.buttonText}>Adicionar Projeto</Text>
+				</TouchableOpacity>
+			</SafeAreaView>
 		</>
 		);
 }
@@ -39,26 +57,24 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: 'purple',
-		justifyContent: 'center',
-		alignItems: 'center',
-		color:'white',
-	},
-	welcome: {
-		fontFamily: 'sans-serif',
-		color: '#00000099',
-		textTransform: 'lowercase',
-		fontSize: 22,
 	},
 	project: {
-		fontFamily: 'sans-serif',
-		color: 'white',
-		fontWeight:'bold',
-		fontSize: 40,
+		color: '#FFF',
+		fontSize: 20,
+		textAlign: 'center'
 	},
-	list:{
-		marginTop:20,
-		width: 250,
-		color: '#00000099',
-		textAlign:'center',
+	button:{
+		backgroundColor: '#fff',
+		margin: 20,
+		height: 50,
+		borderRadius: 4,
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	buttonText: {
+		fontWeight: 'bold',
+		fontSize: 18,
+		color: '#666',
+
 	}
 })
