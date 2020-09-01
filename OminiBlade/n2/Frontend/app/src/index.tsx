@@ -5,7 +5,7 @@ import App from './App';
 
 render(
   <StrictMode>
-  <App />
-	</StrictMode>,
-	document.getElementById('root'),
+    <App />
+  </StrictMode>,
+  document.getElementById('root'),
 );
