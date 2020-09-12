@@ -1,4 +1,8 @@
-// src/routes/index.ts
 import { Router } from 'express';
-const routes = Router();
+import appointmentsRouter from './appointments.routes'
+
+const routes = Router()
+
+routes.use('/appointments', appointmentsRouter)
+
 export default routes;
