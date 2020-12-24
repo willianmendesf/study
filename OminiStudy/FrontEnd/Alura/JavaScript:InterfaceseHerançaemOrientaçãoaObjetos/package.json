@@ -1,0 +1,16 @@
+{
+  "name": "bitebannk",
+  "version": "1.0.0",
+  "description": "bank",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "author": "william mendes",
+	"license": "ISC",
+	"type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
