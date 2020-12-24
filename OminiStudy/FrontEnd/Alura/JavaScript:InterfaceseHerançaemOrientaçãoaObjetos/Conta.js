@@ -1,12 +1,14 @@
+// Classe Abstrata
 export class Conta {
 	constructor(saldoInicial, cliente, agencia) {
+		if
+			(this.constructor == Conta)
+				throw new Error('You cannot instantiate an object of type Account.')
+
 		this._agencia 	= agencia
 		this._cliente 	= cliente
 		this._saldo 		= saldoInicial
 
-		if
-			(this.constructor == Conta)
-			console.log('Você não deve instanciar um objeto do tipo Conta.')
 	}
 
 	set cliente(novoCliente) {
@@ -24,9 +26,7 @@ export class Conta {
 	}
 
 	sacar(valor) {
-		let taxa = 1;
-
-		return this._sacar(valor, taxa);
+		throw new Error('The Cash Out Method was not correctly implemented.')
 	}
 
 	_sacar(valor, taxa) {
