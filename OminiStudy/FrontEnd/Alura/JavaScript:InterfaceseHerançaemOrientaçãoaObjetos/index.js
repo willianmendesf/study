@@ -1,17 +1,23 @@
-import { Cliente } from './Cliente.js';
-import { ContaCorrente } from './ContaCorrente.js';
-import { ContaPoupanca } from './ContaPoupanca.js';
-import { ContaSalario } from './ContaSalario.js';
-
-const cliente1 = new Cliente('Ricardo', 36872639)
-const ContaCorrenteRicardo = new ContaCorrente(cliente1, 1001)
-
-const contaPoupancaRicardo = new ContaPoupanca(ContaCorrenteRicardo.sacar(140), cliente1, 1001);
-const contaSalario =  new ContaSalario(cliente1)
-
-contaSalario.depositar(100)
-contaSalario.sacar(10)
-
-console.log(contaSalario);
+import { Gerente } from './Funcionarios/Gerente.js'
+import { Diretor } from './Funcionarios/Diretor.js'
+import { Auth } from './Config/Auth.js'
+import { Cliente } from './Cliente.js'
 
 
+// DIRETOR
+const diretor = new Diretor("Rodrigo", 10000, 1231231231)
+diretor.cadastrarSenha('12345678')
+const diretorLogado = Auth.login(diretor, '12345678')
+
+// GERENTE
+const gerente = new Gerente("Ricardo", 5000, 12312902031)
+gerente.cadastrarSenha('123456789')
+const gerenteLogado = Auth.login(gerente, '123456789')
+
+
+// CLIENTE
+const cliente = new Cliente("Lais", '938746586799')
+// cliente.cadastrarSenha('123')
+const clienteLogado = Auth.login(cliente, '123')
+
+console.log( clienteLogado )
