@@ -66,7 +66,7 @@ Para te deixar ainda mais preparado(a), temos alguns conteúdos sobre testes.
 
  * [Introdução a testes automatizados](https://www.alura.com.br/curso-online-tdd);
  * [Testes de integração](https://www.alura.com.br/curso-online-teste-de-integracao);
- * [Conteúdo mais profundo sobre testes](/testes-automatizados-reveladores-de-bugs).
+ * [Conteúdo mais profundo sobre testes](testes-automatizados-reveladores-de-bugs).
 
 Agora, com um pouco mais de teoria sobre como os testes podem ajudar no aumento de confiabilidade de execução do código, mergulhe no desafio de criar uma API que simula parte do Mercado Livre.
 
