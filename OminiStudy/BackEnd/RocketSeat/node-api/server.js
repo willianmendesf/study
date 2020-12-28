@@ -12,4 +12,6 @@ requireDir('./src/models')
 
 app.use('/api', require('./src/routes'))
 
-app.listen(3000)
+app.listen(3000, ()=> {
+	console.log('Server run in: http://localhost:3000')
+})
