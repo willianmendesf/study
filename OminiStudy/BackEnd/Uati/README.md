@@ -70,7 +70,7 @@ Para te deixar ainda mais preparado(a), temos alguns conteúdos sobre testes.
 
 Agora, com um pouco mais de teoria sobre como os testes podem ajudar no aumento de confiabilidade de execução do código, mergulhe no desafio de criar uma API que simula parte do Mercado Livre.
 
-* [Implementar o desafio de construção de uma API que simule parte do funcionamento do mercado livre](./treino-mercado-livre);
+* [Implementar o desafio de construção de uma API que simule parte do funcionamento do mercado livre](treino-mercado-livre);
 
 Neste ponto da jornada, você deve estar se sentindo mais confiante e mais capaz de construir API's com as tecnologias e práticas até aqui trabalhadas. Vamos para o desafio final. Que é construir uma API que simule o funcionamento do credicard zero, um produto do Itaú. **Esta é a fase quatro do nosso bootcamp.**
 
