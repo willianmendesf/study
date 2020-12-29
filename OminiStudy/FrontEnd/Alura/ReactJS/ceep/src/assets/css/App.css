@@ -1,0 +1,13 @@
+.my-app {
+	display: flex;
+}
+
+
+:root {
+	--primaria: #4056F4;
+	--secundaria: #cccccc30;
+	--secundaria-ativa: #cccccc;
+	--terciaria: #dddddd;
+	--fundo: white;
+	--fundo-detalhes: #ececec;
+}
