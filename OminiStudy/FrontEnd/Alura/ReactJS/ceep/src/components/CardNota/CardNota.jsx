@@ -4,11 +4,15 @@ import "./estilo.css";
 class CardNota extends Component {
 	render() {
 		return (
-			<section className="card-nota">
-				<header>
-					<h3>Titulo</h3>
+			<section className="card-notas_item_secion">
+				<header className="card-notas_item_secion_header">
+					<h3 className="card-notas_item_secion_header_title">
+						{this.props.title}
+					</h3>
 				</header>
-				<p>Escreva sua nota</p>
+				<p className="card-notas_item_secion_text">
+						{this.props.content}
+				</p>
 			</section>
 		)
 	}
