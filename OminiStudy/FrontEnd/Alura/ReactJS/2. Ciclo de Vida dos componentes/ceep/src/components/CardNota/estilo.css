@@ -1,0 +1,44 @@
+.card-notas_item_secion {
+	width: 100%;
+	margin: 10px;
+}
+
+.card-notas_item_secion_header {
+	background-color: var(--secundaria);
+	padding: 2px 10px;
+	border-radius: 6px;
+}
+
+.card-notas_item_secion_editar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-notas_item_secion_editar_cat {
+	font-size: 12px;
+	color: #777;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.card-notas_item_secion_editar_delete {
+	cursor: pointer;
+	width: 18px;
+	fill: red;
+}
+
+.card-notas_item_secion_header_title {
+	font-size: 0.9rem;
+	font-weight: 400;
+	color:#555;
+}
+
+.card-notas_item_secion_text {
+	font-size: 0.8rem;
+	color:#555;
+	border: 1px solid var(--secundaria);
+	padding:10px;
+	overflow-y: auto;
+	height: 200px;
+}

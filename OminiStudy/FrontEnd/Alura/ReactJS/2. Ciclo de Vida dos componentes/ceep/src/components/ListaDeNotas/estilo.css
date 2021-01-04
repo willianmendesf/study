@@ -1,0 +1,15 @@
+.lista-notas {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.lista-notas_item {
+	background-color: white;
+	border: 1px solid var(--terciaria);
+	margin: 5px;
+	width: 300px;
+	border-radius: 6px;
+	display: flex;
+	box-shadow: 0px 4px 10px -8px rgba(0,0,0,0.6);
+}

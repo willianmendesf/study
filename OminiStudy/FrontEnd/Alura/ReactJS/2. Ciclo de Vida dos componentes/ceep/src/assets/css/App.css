@@ -1,0 +1,18 @@
+.my-app {
+	display: flex;
+}
+
+.my-app_principal {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+:root {
+	--primaria: #4056F4;
+	--secundaria: #cccccc30;
+	--secundaria-ativa: #cccccc;
+	--terciaria: #dddddd;
+	--fundo: white;
+	--fundo-detalhes: #ececec;
+}

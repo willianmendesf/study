@@ -1,0 +1,36 @@
+.formulario-cadastro {
+	display: flex;
+	flex-direction: column;
+	padding:1%;
+	border-left: 1px solid var(--terciaria);
+	width: 30%;
+	position: fixed;
+	justify-content: flex-end;
+	background: #fff;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+}
+
+.formulario-cadastro_input {
+	border: 1px solid var(--terciaria);
+	padding:4%;
+	border-radius: 6px;
+	margin: 3px 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-cadastro_select {
+	color: #666;
+	background-color: #fff;
+}
+
+.formulario-cadastro_button {
+	height: 30px;
+	border: none;
+	width: 150px;
+	border-radius: 4px;
+	color: var(--fundo);
+	background-color: var(--primaria);
+	margin: 0 0 0 auto;
+}
