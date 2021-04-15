@@ -8,6 +8,7 @@ class FormularioCadastro extends Component {
 		this.title = "";
 		this.content = "";
 		this.category = "";
+		this.color = "";
 	}
 
 	_handleChangeTitle(event){
@@ -22,12 +23,16 @@ class FormularioCadastro extends Component {
 		this.category = event.target.value;
 	}
 
+	_handleChangeColor(event) {
+		this.color = event.target.value;
+	}
+
 	_createNote(event) {
 		event.preventDefault()
 		if (!this.title){alert('Titulo não pode ser vazio!')}
 		else if (!this.content){alert('Conteúdo não pode ser vazio!')}
 		else if (!this.category || this.category === "---Selecione uma opção---"){alert('Selecione uma opção')}
-		else {this.props.createNote(this.title, this.content, this.category)}
+		else {this.props.createNote(this.title, this.content, this.category, this.color)}
 	}
 
 	render() {
@@ -58,6 +63,12 @@ class FormularioCadastro extends Component {
 						}
 					)}
 				</select>
+				<input
+					type="text"
+					placeholder="Cor da categoria"
+					className="formulario-cadastro_input formulario-cadastro_color"
+					onChange={this._handleChangeColor.bind(this)}
+				/>
 				<textarea
 					className="formulario-cadastro_input formulario-cadastro_textarea"
 					placeholder="Escreva sua nota!"

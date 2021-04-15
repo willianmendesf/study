@@ -16,6 +16,7 @@ class ListaDeNotas extends Component {
 								title={note.title}
 								content={note.content}
 								category={note.category}
+								color={note.color}
 								deleteNote={this.props.deleteNote}
 							/>
 						</li>
