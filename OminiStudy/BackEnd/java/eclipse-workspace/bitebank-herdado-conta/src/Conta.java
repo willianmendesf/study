@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
 	private double saldo;
 	private int agencia;
 	private int numero;
@@ -11,24 +11,24 @@ public class Conta {
 		this.numero = numero;
 	}
 	
-	public void deposita(double valor) {
-		if (valor <= 0.1) { 
-			System.out.println("Valor de depósito inválido."); 
-			return; 
+	public abstract void deposita(double valor) {
+		if (valor <= 0.1) {
+			System.out.println("Valor de depósito inválido.");
+			return;
 		} this.saldo += valor;
 	}
 	
 	public boolean saca(double valor) {
-		if (this.saldo >= valor) { 
-			this.saldo -= valor; 
-			return true; 
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
 		} else return false;
 	}
 	
 	public boolean transfere(double valor, Conta destino) {
-		if (this.saca(valor)) { 
-			destino.deposita(valor); 
-			return true; 
+		if (this.saca(valor)) {
+			destino.deposita(valor);
+			return true;
 		} else return false;
 	}
 	

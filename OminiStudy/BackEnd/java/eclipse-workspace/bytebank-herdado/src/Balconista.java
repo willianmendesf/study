@@ -5,6 +5,8 @@ public class Balconista extends Funcionario {
 		super(nome, cpf);
 	}
 
-	public double getBonificacao() { return super.getBonificacao() + 100; }
-	
+	@Override
+	public double getBonificacao() {
+		return 200;
+	}
 }
