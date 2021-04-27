@@ -5,7 +5,7 @@ public abstract class Funcionario {
 	private String cpf;
 	private double salario;
 	private int tipo = 0;
-	
+		
 	public Funcionario(String nome, String cpf) { this.nome = nome; this.cpf = cpf; }
 	
 	public void setTipo(int tipo) { this.tipo = tipo; }
