@@ -11,7 +11,7 @@ public abstract class Conta {
 		this.numero = numero;
 	}
 	
-	public abstract void deposita(double valor) {
+	public void deposita(double valor) {
 		if (valor <= 0.1) {
 			System.out.println("Valor de depósito inválido.");
 			return;
