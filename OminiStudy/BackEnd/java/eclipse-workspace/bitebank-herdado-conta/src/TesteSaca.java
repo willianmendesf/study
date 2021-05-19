@@ -3,11 +3,16 @@ public class TesteSaca {
 
 	public static void main(String[] args) {
 		
-		ContaCorrente c = new ContaCorrente(123,123);
-		c.deposita(200.0);
-		c.saca(252.20);
+		ContaCorrente conta = new ContaCorrente(123,123);
+		conta.deposita(200.0);
 		
-		System.out.println(c.getSaldo());
+		try {
+			conta.saca(252.20);			
+			System.out.println(conta.getSaldo());
+		} catch (SaldoInsuficienteException ex) {
+			System.out.println(ex.getMessage());
+		}
+		
 	}
 
 }

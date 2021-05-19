@@ -21,7 +21,7 @@ public abstract class Conta {
 	public void saca(double valor) {
 		
 		if (this.saldo < valor) {
-			throw new SaldoInsuficienteException("Seu Saldo " + this.saldo + ", Valor Solicitado: " + (valor - 0.2));
+			throw new SaldoInsuficienteException("Fundos insuficiente. Seu Saldo é " + this.saldo);
 		}
 		
 		this.saldo -= valor;
