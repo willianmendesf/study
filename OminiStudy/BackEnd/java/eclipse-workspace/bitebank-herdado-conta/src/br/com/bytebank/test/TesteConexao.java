@@ -1,4 +1,5 @@
-package teste;
+package br.com.bytebank.test;
+import br.com.bytebank.modelo.Conexao;
 
 public class TesteConexao {
 	public static void main(String[] args) {

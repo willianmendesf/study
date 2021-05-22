@@ -1,5 +1,12 @@
-package modelo;
+package br.com.bytebank.modelo;
 
+/**
+ * Classe que representa a moldura de uma conta.
+ * 
+ * @author willianmendesf
+ * Version: 1.0
+ *
+ */
 public abstract class Conta {
 	private double saldo;
 	private int agencia;
@@ -7,6 +14,12 @@ public abstract class Conta {
 	private Cliente titular;
 	private static int total;
 	
+	/**
+	 * Construtor para inicializar o Objeto Conta a partir da agencia e numero.
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
 	public Conta(int agencia, int numero) {
 		Conta.total++;
 		this.agencia = agencia;
