@@ -1,4 +1,3 @@
-
 import { Component, Output, EventEmitter } from '@angular/core';
 import { NumberValueAccessor } from '@angular/forms';
 
@@ -11,19 +10,13 @@ export class NovaTransferenciaComponent {
 
   @Output() aoTransferir = new EventEmitter<any>();
 
-  destino = 0;
-  valor = 0;
+  valor: number;
+  destino: number;
 
-  transferir(): void{
-    console.log('Solicitada nova transferência!');
-    const transferencia = {destino: this.destino, valor: this.valor}
-    this.aoTransferir.emit(transferencia);
-    this.clearForm();
-
+  transferir() :void {
+    console.log("Solicitada nova transferência")
+    const valorEmitir: Object = { valor: this.valor, destino: this.destino };
+    this.aoTransferir.emit(valorEmitir);
   }
 
-  clearForm() {
-    this.destino = 0;
-    this.valor = 0;
-  }
 }
