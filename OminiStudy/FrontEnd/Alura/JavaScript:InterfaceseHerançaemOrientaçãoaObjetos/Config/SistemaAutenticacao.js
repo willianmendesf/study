@@ -1,6 +1,6 @@
 /*
 Duck Typing;
-*/
+
 
 export class SistemaAutenticacao {
 	static login(autenticavel, senha) {
@@ -15,3 +15,4 @@ export class SistemaAutenticacao {
 		return "autenticar" in autenticável && autenticavel.autenticar instanceof Function;
 	}
 }
+*/
