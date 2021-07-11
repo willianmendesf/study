@@ -54,6 +54,7 @@ public class Topico {
 		this.id = id;
 	}
 
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -61,6 +62,7 @@ public class Topico {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+
 
 	public String getMensagem() {
 		return mensagem;
@@ -70,6 +72,7 @@ public class Topico {
 		this.mensagem = mensagem;
 	}
 
+
 	public LocalDateTime getDataCriacao() {
 		return dataCriacao;
 	}
@@ -77,6 +80,7 @@ public class Topico {
 	public void setDataCriacao(LocalDateTime dataCriacao) {
 		this.dataCriacao = dataCriacao;
 	}
+
 
 	public StatusTopico getStatus() {
 		return status;
@@ -86,6 +90,7 @@ public class Topico {
 		this.status = status;
 	}
 
+
 	public Usuario getAutor() {
 		return autor;
 	}
@@ -94,6 +99,7 @@ public class Topico {
 		this.autor = autor;
 	}
 
+
 	public Curso getCurso() {
 		return curso;
 	}
@@ -101,6 +107,7 @@ public class Topico {
 	public void setCurso(Curso curso) {
 		this.curso = curso;
 	}
+
 
 	public List<Resposta> getRespostas() {
 		return respostas;
