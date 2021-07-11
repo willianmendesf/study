@@ -1,3 +1,6 @@
+DROP TABLE category;
+DROP TABLE flyway_schema_history;
+
 CREATE TABLE category (
 	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL
