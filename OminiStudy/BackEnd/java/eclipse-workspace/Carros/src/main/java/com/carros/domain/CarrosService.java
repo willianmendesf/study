@@ -8,6 +8,6 @@ public class CarrosService {
 	public List<Carro> getCarros() {
 		List<Carro> carros = new ArrayList<>();
 		
-		carros
+		return carros;
 	}
 }
