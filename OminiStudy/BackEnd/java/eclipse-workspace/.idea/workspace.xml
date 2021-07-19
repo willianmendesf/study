@@ -257,10 +257,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/eclipse-workspace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,8 +276,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/forum-spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -303,15 +302,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2851" y="293" key="FileChooserDialogImpl" timestamp="1625675156015">
-      <screen x="1920" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2851" y="293" key="FileChooserDialogImpl/1920.0.2560.1080/0.0.1920.1080@1920.0.2560.1080" timestamp="1625675156015" />
-    <state x="2727" y="244" key="run.anything.popup" timestamp="1625675122579">
-      <screen x="1920" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2727" y="244" key="run.anything.popup/1920.0.2560.1080/0.0.1920.1080@1920.0.2560.1080" timestamp="1625675122579" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
