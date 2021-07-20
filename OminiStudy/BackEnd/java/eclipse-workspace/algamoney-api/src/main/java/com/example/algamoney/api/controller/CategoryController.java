@@ -48,8 +48,12 @@ public class CategoryController {
 	}
 	
 	@GetMapping("/{id}")
-	public Optional<Category> getId(@PathVariable Long id) {
-		return categoryRepository.findById(id);
+	public Object getById(@PathVariable Long id) {
+		if (id == null) {
+			return ResponseEntity.notFound().build();			
+		} else {
+			return categoryRepository.findById(id);
+		}
 	}
 }
 
