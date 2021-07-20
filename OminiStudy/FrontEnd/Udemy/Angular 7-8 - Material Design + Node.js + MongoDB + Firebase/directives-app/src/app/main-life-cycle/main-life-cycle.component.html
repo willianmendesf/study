@@ -48,7 +48,7 @@
 
           <p mat-line>
             <mat-chip-list>
-              <mat-chip *ngFor="let e of child.events" [color]="event.color" selected>
+              <mat-chip *ngFor="let event of child.events" [color]="event.color" selected>
                 {{event.name}}
               </mat-chip>
             </mat-chip-list>

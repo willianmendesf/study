@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from "./Client";
 
-
-
- @Component({
+@Component({
   selector: 'app-main-life-cycle',
   templateUrl: './main-life-cycle.component.html',
   styleUrls: ['./main-life-cycle.component.css']
