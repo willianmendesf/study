@@ -1,0 +1,15 @@
+{
+  "name": "webpackcourse",
+  "version": "1.0.0",
+  "description": "Study webpack to implementatios in and with microfrontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Mendes",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
