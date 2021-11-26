@@ -23,10 +23,10 @@ public class ClientDAO {
 
 	// Method to List clients;
 	public List<Client> listClients(){
-		List<Client> listAllClients = new ArrayList<>();
-
+		List<Client> listAllClients = null;
 		try {
-			String sql = "SELECT * FROM tb_clients";
+			listAllClients = new ArrayList<>();
+			String sql = "SELECT * FROM tb_clients;";
 			PreparedStatement insertSql = con.prepareStatement(sql);
 			ResultSet rs = insertSql.executeQuery();
 
@@ -42,18 +42,16 @@ public class ClientDAO {
 				client.setPhone(rs.getString("phone"));
 				client.setCEP(rs.getInt("CEP"));
 				client.setAddress(rs.getString("address"));
-				client.setAddress(rs.getString("address"));
 				client.setAddressNum(rs.getInt("addressNum"));
 				client.setDistrict(rs.getString("district"));
 				client.setCity(rs.getString("city"));
 				client.setComplement(rs.getString("complement"));
 				client.setUF(rs.getString("UF"));
 			}
-			JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
+			JOptionPane.showMessageDialog(null, "Sucesso!");
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "OPS!, houve um erro: " + e);
 		}
-
 		return listAllClients;
 	}
 

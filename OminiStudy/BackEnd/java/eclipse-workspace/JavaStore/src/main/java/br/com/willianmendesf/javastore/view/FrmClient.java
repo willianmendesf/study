@@ -20,21 +20,32 @@ import static java.lang.Integer.*;
  */
 public class FrmClient extends javax.swing.JFrame {
 
-		public void loadTable() {
+    public void loadTable() {
 
-			ClientDAO dao = new ClientDAO();
-			List<Client> list = dao.listClients();
-			DefaultTableModel data = (DefaultTableModel) clientsTable.getModel();
+        ClientDAO dao = new ClientDAO();
+        List<Client> list = dao.listClients();
+        DefaultTableModel data = (DefaultTableModel) clientsTable.getModel();
 
-			data.setNumRows(0);
+        data.setNumRows(0);
 
-			for(Client c: list) {
-				data.addRow(new Object[]{
-					c.getId(),
-					c.getName()
-				});
-			}
-		}
+        for(Client c: list) {
+            data.addRow(new Object[]{
+                c.getName(),
+                c.getEmail(),
+                c.getCPF(),
+                c.getRG(),
+                c.getMobile(),
+                c.getPhone(),
+                c.getCEP(),
+                c.getAddress(),
+                c.getAddressNum(),
+                c.getDistrict(),
+                c.getCity(),
+                c.getComplement(),
+                c.getUF()
+            });
+        }
+    }
 
     /**
      * Creates new form FrmClient
@@ -405,20 +416,18 @@ public class FrmClient extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
                 "Código", "Nome", "RG", "CPF", "Email", "Celular", "Telefone", "CEP", "Endereço", "Nº", "Comp", "Bairro", "Cidade", "UF"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
+        ));
         jScrollPane1.setViewportView(clientsTable);
 
         saveList.setBackground(new java.awt.Color(2, 168, 27));
@@ -589,15 +598,15 @@ public class FrmClient extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_editListActionPerformed
 
-    private void deleteListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteListActionPerformed
+    private void deleteListActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-    }//GEN-LAST:event_deleteListActionPerformed
+    }
 
-    private void newListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newListActionPerformed
+    private void newListActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-    }//GEN-LAST:event_newListActionPerformed
+    }
 
-    private void btn_clearnewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_clearnewActionPerformed
+    private void btn_clearnewActionPerformed(java.awt.event.ActionEvent evt) {
 			txt_code.setText(null);
 			txt_name.setText(null);
 			txt_email.setText(null);
@@ -614,7 +623,7 @@ public class FrmClient extends javax.swing.JFrame {
 			txt_complement.setText(null);
 			txt_city.setText(null);
 			txt_UF.setText(null);
-    }//GEN-LAST:event_btn_clearnewActionPerformed
+    }
 
 		public static String regexNum(String data){
 			return data.replaceAll("[^0-9]+", "");
@@ -644,7 +653,7 @@ public class FrmClient extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_savenewActionPerformed
 
     private void codeListAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codeListAllActionPerformed
-
+        loadTable();
     }//GEN-LAST:event_codeListAllActionPerformed
 
     /**
