@@ -28,7 +28,7 @@ public abstract class Conta {
 	
 	public void deposita(double valor) {
 		if (valor <= 0.1) {
-			System.out.println("Valor de depÃ³sito invÃ¡lido.");
+			System.out.println("Valor de depositado Inválido.");
 			return;
 		} this.saldo += valor;
 	}
@@ -36,7 +36,7 @@ public abstract class Conta {
 	public void saca(double valor) throws SaldoInsuficienteException {
 		
 		if (this.saldo < valor) {
-			throw new SaldoInsuficienteException("Fundos insuficiente. Seu Saldo Ã© " + this.saldo);
+			throw new SaldoInsuficienteException("Fundos insuficiente. Seu Saldo é " + this.saldo);
 		}
 		
 		this.saldo -= valor;
