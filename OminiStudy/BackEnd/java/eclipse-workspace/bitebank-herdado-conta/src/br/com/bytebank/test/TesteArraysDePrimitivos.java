@@ -16,7 +16,7 @@ public class TesteArraysDePrimitivos {
         int idade1 = idades[4];
         
         for(int i = 0; i < idades.length; i++) {
-        	//System.out.println(idades[i] = i * i);
+        	System.out.println(idades[i] = i * i);
         }
 
         for(int i = 0; i < idades.length; i++) {

@@ -7,11 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { ExtratoComponent } from './extrato/extrato.component';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { MycheckComponent } from './mycheck/mycheck.component';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
-  declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent],
+  declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent, MycheckComponent],
   imports: [BrowserModule, FormsModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
