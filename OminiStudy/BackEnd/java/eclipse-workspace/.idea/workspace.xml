@@ -256,7 +256,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="" />
+    <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/BookstoremanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/BookstoremanagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/MessageResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/MessageResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-di/src/main/java/com/bolsadeideias/springboot/di/app/SpringBootDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-di/src/main/java/com/bolsadeideias/springboot/di/app/SpringBootDiApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,7 +288,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../bookstores-willianmendesf" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
