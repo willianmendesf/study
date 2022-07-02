@@ -8,11 +8,11 @@ import com.willianmendesf.bookstoremanager.entity.Book;
 
 @Mapper
 public interface BookMapper {
-	
+
 	BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
 
 	Book toModel(BookDTO bookDTO);
-	
+
 	BookDTO toDTO(Book book);
 
 }

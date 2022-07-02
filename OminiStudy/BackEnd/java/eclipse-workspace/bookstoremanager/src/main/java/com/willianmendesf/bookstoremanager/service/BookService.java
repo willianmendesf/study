@@ -13,24 +13,24 @@ import com.willianmendesf.bookstoremanager.repository.BookRepository;
 
 @Service
 public class BookService {
-	
+
 	@Autowired
 	private BookRepository bookRepository;
-	
+
 	private final BookMapper bookMapper = BookMapper.INSTANCE;
-	
+
 	public List<Book> list() {
 		return bookRepository.findAll();
 	}
-	
+
 	public MessageResponseDTO create(BookDTO bookDTO) {
-		
+
 		Book bookToSave = bookMapper.toModel(bookDTO);
 		Book savedBook  = bookRepository.save(bookToSave);
-		
+
 		return MessageResponseDTO
 				.builder()
-				 .message("book created with ID " + savedBook.getId())
-				  .build();
+					.message("book created with ID " + savedBook.getId())
+						.build();
 	}
 }

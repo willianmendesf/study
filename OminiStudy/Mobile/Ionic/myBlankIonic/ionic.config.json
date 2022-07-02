@@ -1,0 +1,7 @@
+{
+  "name": "myBlankIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

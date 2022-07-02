@@ -23,7 +23,7 @@ public class BookController {
 	@Autowired
 	private BookService bookService;
 	
-	@GetMapping("/")
+	@GetMapping("/list")
 	public List<Book> listAll() {
 		return bookService.list();
 	}
