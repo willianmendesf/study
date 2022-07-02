@@ -256,28 +256,67 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="" />
+    <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/AuthorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/mapper/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bookstoremanager" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1uzig5KJf28xu28lMfU2o2U56Qa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/William Mendes/Desktop/SERVER/study/OminiStudy/BackEnd/java/eclipse-workspace&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Bookstoremanager" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../../../../Program Files/Java/jdk-18" />
+      <option name="MAIN_CLASS_NAME" value="com.willianmendesf.bookstoremanager.BookstoremanagerApplication" />
+      <module name="eclipse-workspace" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.willianmendesf.bookstoremanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Bookstoremanager" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -300,6 +339,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
