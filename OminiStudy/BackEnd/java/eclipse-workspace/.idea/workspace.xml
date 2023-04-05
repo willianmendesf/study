@@ -257,18 +257,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82afb78-a9ad-497d-a91e-cb95273ac0f4" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/AuthorDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/dto/BookDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstoremanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/java/br/com/willianmendesf/controle/ControleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/java/br/com/willianmendesf/controle/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/java/br/com/willianmendesf/controle/model/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/java/br/com/willianmendesf/controle/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/java/br/com/willianmendesf/controle/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controle/src/test/java/br/com/willianmendesf/controle/ControleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstoremanager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/BookstoremanagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/BookstoremanagerApplication.java" afterDir="false" />
@@ -278,8 +283,7 @@
       <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/entity/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookstoremanager/src/main/java/com/willianmendesf/bookstoremanager/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-di/src/main/java/com/bolsadeideias/springboot/di/app/SpringBootDiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-di/src/main/java/com/bolsadeideias/springboot/di/app/SpringBootDiApplication.java" afterDir="false" />
->>>>>>> bfc1bf27d5512c710d2f71e52e262f4d77c9088b
+      <change beforePath="$PROJECT_DIR$/../../../Mobile/Ionic/myBlankIonic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Mobile/Ionic/myBlankIonic/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +291,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bookstoremanager" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -302,16 +306,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/William Mendes/Desktop/SERVER/study/OminiStudy/BackEnd/java/eclipse-workspace&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Bookstoremanager" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../../../../Program Files/Java/jdk-18" />
@@ -332,15 +340,6 @@
         <item itemvalue="Application.Bookstoremanager" />
       </list>
     </recent_temporary>
-=======
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../bookstores-willianmendesf" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
->>>>>>> bfc1bf27d5512c710d2f71e52e262f4d77c9088b
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
